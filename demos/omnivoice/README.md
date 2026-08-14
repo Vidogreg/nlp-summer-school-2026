@@ -30,3 +30,10 @@ for the full list, e.g. `"female, british accent"` or `"child, high pitch"`).
 Each example can also set `language` (a code like `"sk"` or a full name like
 `"Slovak"`) — the model covers 600+ languages and is otherwise language-
 agnostic, inferring it from the text.
+
+## Colab version
+
+`text_to_speech_colab.ipynb` is a Colab-ready variant for the workshop: it
+mounts Google Drive and caches the model weights there (via `HF_HOME`) so
+attendees don't re-download a few GB every session, falling back to a normal
+download if the Drive cache isn't available.
