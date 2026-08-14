@@ -1,0 +1,21 @@
+[project]
+name = "nlp-summer-school-2026"
+version = "0.1.0"
+description = "Demos for the Kinit NLP Summer School 2026"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "omnivoice",
+    "torch",
+    "torchaudio",
+    "soundfile",
+]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu126" }]
+torchaudio = [{ index = "pytorch-cu126" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
