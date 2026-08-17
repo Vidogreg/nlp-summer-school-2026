@@ -37,3 +37,14 @@ agnostic, inferring it from the text.
 mounts Google Drive and caches the model weights there (via `HF_HOME`) so
 attendees don't re-download a few GB every session, falling back to a normal
 download if the Drive cache isn't available.
+
+It also has a **voice cloning** section, in two parts:
+1. Clones a public sample voice (one clip from `hf-internal-testing/librispeech_asr_dummy`) to say new text.
+2. Records the attendee's own voice from the browser mic (reading a printed
+   prompt sentence), saves it to their Drive cache folder, then clones it to
+   say something new.
+
+The mic-recording cell uses a JS `MediaRecorder` snippet + `pydub`/ffmpeg to
+decode the browser's recording — this is the least-tested part (no way to
+exercise real browser mic access outside Colab itself), so try it early
+rather than right before presenting.
