@@ -1,15 +1,8 @@
-# Claude's project memory (not intended for publication)
-CLAUDE.md
-
-# Viktor's notes
+# notes
 notes.md
 
-# Generated demo outputs (regenerable, not meant to be committed)
-demos/**/*.wav
-
-# per-demo virtual environments (uv.lock is the committed source of truth)
-.venv/
-__pycache__/
+# Claude's project memory (not intended for publication)
+CLAUDE.md
 
 # Claude Code session-local state
 .claude/
