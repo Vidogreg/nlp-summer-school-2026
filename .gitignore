@@ -6,3 +6,7 @@ CLAUDE.md
 
 # Claude Code session-local state
 .claude/
+
+# audio samples
+colab_demos/speech-to-text/stt_samples.zip
+colab_demos/text-to-speech/tts_samples.zip
